@@ -92,17 +92,6 @@ El código JavaScript está dividido en diferentes responsabilidades:
 
 Esto permite mantener el código organizado y evitar duplicar lógica.
 
-## 🤖 Uso de Inteligencia Artificial
-
-Se utilizó GitHub Copilot como apoyo para mejorar la estructura y
-organización del código JavaScript.
-
-La asistencia se enfocó principalmente en mantener separadas las
-funciones de filtrado y renderizado, conservando el uso de `filter()`,
-los eventos `input` y `change`, y la actualización dinámica del DOM.
-
-El prompt utilizado se encuentra en el archivo `PROMPTS.md`.
-
 ## ▶️ Cómo ejecutar el proyecto
 
 1. Descarga o clona el repositorio.
