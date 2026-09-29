@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca musical con filtros dinámicos">
+    <title>Music Library</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <p class="eyebrow">MY COLLECTION</p>
+            <h1>Music Library</h1>
+            <p class="subtitle">
+                Explora nuestra colección de álbumes y encuentra tu próxima canción favorita.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="filters" aria-label="Filtros de música">
+
+            <div class="filter-group">
+                <label for="buscador">Buscar álbum o artista</label>
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        id="buscador"
+                        placeholder="Ej. Thriller o Michael Jackson"
+                        autocomplete="off"
+                    >
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label for="categoria">Género musical</label>
+
+                <select id="categoria">
+                    <option value="todas">Todos los géneros</option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="results-header">
+            <div>
+                <p class="section-label">COLLECTION</p>
+                <h2>Álbumes</h2>
+            </div>
+
+            <p id="contador" class="counter"></p>
+        </section>
+
+        <section
+            id="productos"
+            class="products-grid"
+            aria-live="polite"
+        >
+        </section>
+
+        <section
+            id="sin-resultados"
+            class="no-results hidden"
+            aria-live="polite"
+        >
+            <div class="no-results-icon">♪</div>
+            <h2>No encontramos resultados</h2>
+            <p>
+                Intenta buscar otro álbum, artista o seleccionar un género diferente.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Music Library · Filtro dinámico de productos</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
